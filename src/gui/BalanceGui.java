@@ -22,11 +22,11 @@ public class BalanceGui implements ActionListener{
 	
 		frame = new JFrame("Lager Bilanz");
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		frame.setSize(400, 600);
+		frame.setSize(450, 600);
 		frame.setLayout(null);
 		
 		// Area
-		balanceArea.setBounds(0, 0, 400, 500);
+		balanceArea.setBounds(0, 0, 450, 500);
 		balanceArea.setEditable(false);
 		balanceArea.setFont(font);
 		frame.add(balanceArea);
@@ -36,17 +36,17 @@ public class BalanceGui implements ActionListener{
 		
 		reload.addActionListener(this);
 		reload.setFocusable(false);
-		reload.setBounds(100, 500, 100, 25);
+		reload.setBounds(0, 500, 100, 25);
 		frame.add( reload );
 		
 		lastPage.addActionListener(this);
 		lastPage.setFocusable(false);
-		lastPage.setBounds(200, 500, 100, 25);
+		lastPage.setBounds(100, 500, 100, 25);
 		frame.add( lastPage );
 		
 		nextPage.addActionListener(this);
 		nextPage.setFocusable(false);
-		nextPage.setBounds(300, 500, 100, 25);
+		nextPage.setBounds(200, 500, 100, 25);
 		frame.add( nextPage );
 		
 		frame.setVisible(true);
