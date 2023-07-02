@@ -49,6 +49,8 @@ Programm war nach 4 Tagen fertig programmiert. Zeit waren so 60 Tage. Am letzten
 
 - Man koennte hier noch so viel machen but fck it! Draussen scheint die Sonne und ich will chillen 🌞!
 
+Abgabe wird nach Einsendeschluss auf meinem GitHub veroeffentlicht.
+
 ## Unsere Aufgabenstellung Sommer 2023
 
 Allgemeine Hinweise:
