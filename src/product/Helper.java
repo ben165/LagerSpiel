@@ -5,6 +5,14 @@ import java.awt.Color;
 public class Helper {
 
 	public static int i;
+	//{ new Color(244, 245, 155), new Color(170, 185, 231), new Color(144, 210, 168)}; //sw, gelb, blau, gn
+	
+	static Color white = new Color(255, 255, 255);
+	static Color yellow = new Color(244, 245, 155);
+	static Color blue = new Color(170, 185, 231);
+	static Color green = new Color(144, 210, 168);
+	static Color[] colors = {white, yellow, blue, green};
+	
 	
 	// Einlagerung
 	// String to Boolean
@@ -15,7 +23,7 @@ public class Helper {
 			return false;
 		}
 	}
-
+	
 	// Boolean to String
 	public static String inOrOut(boolean b) {
 		if ( b ) {
@@ -57,12 +65,13 @@ public class Helper {
 	}
 
 	// Give Font type (not implemented)
-	public static Color giveFont(int i) {
+	public static Color giveColor(int i) {
 		switch (i) {
-		case 0: return Color.GREEN;
-		case 1: return Color.BLUE;
-		case 2: return Color.RED;
-		default: return Color.BLACK;
+		case -1: return colors[0];
+		case 0: return colors[1];
+		case 1: return colors[2];
+		case 2: return colors[3];
+		default: return colors[0];
 		}
 	}
 	

@@ -73,6 +73,7 @@ public class StorageUnit implements ActionListener{
 				unitArea.setText(null);
 				LagerGui.balanceList.scrappedStorage(p);
 				LagerGui.balanceField.setText( LagerGui.balanceList.getBalance() );
+				unitArea.setBackground(Helper.giveColor(-1));
 			} catch (Exception e1) {
 				LagerGui.errorField.setText( e1.getMessage() );
 			}
@@ -91,8 +92,10 @@ public class StorageUnit implements ActionListener{
 						LagerGui.balanceList.insert(p);
 						unitArea.setText(p.lessInfo());
 						LagerGui.contractUnit[contractNr].setText(null);
+						LagerGui.contractUnit[contractNr].setBackground(Helper.giveColor(-1));
 						LagerGui.orderList.delete(contractNr);
 						LagerGui.balanceField.setText( LagerGui.balanceList.getBalance() );
+						unitArea.setBackground(Helper.giveColor(p.getMaterial()));
 					}
 					// Auslagerung passt auf Lagerware
 					else {
@@ -100,8 +103,10 @@ public class StorageUnit implements ActionListener{
 						unitArea.setText(null);
 						LagerGui.shelf.destroy(x, y);
 						LagerGui.contractUnit[contractNr].setText(null);
+						LagerGui.contractUnit[contractNr].setBackground(Helper.giveColor(-1));
 						LagerGui.orderList.delete(contractNr);
 						LagerGui.balanceField.setText( LagerGui.balanceList.getBalance() );
+						unitArea.setBackground(Helper.giveColor(-1));
 					}
 				}
 				catch (Exception e1) {

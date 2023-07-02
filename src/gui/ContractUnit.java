@@ -1,5 +1,6 @@
 package gui;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -8,6 +9,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextArea;
 
+import product.Helper;
 import product.Product;
 
 public class ContractUnit implements ActionListener{
@@ -57,13 +59,18 @@ public class ContractUnit implements ActionListener{
 			LagerGui.balanceList.rejectContract(p);
 			LagerGui.contractUnit[x].setText(null);
 			LagerGui.balanceField.setText( LagerGui.balanceList.getBalance() );
+			contractArea.setBackground(Helper.giveColor(-1));
 		} catch (Exception e1) {
 			LagerGui.errorField.setText(e1.getMessage());
 		}
+	}
+
+	public void setBackground(Color c) {
+		contractArea.setBackground(c);
 	}
 	
 	public void setText(String s) {
 		contractArea.setText(null);
 		contractArea.setText(s);
-	}	
+	}
 }

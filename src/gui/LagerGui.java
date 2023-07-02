@@ -1,7 +1,6 @@
 package gui;
 
 
-import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -24,7 +23,6 @@ public class LagerGui implements ActionListener {
 	public static Orders orders = new Orders();
 	public static Storage shelf = new Storage();
 	public static BalanceList balanceList = new BalanceList();
-	public static Font font;
 	
 	JFrame frame;
 	
@@ -123,10 +121,11 @@ public class LagerGui implements ActionListener {
 					int nr = orderList.accept(p);
 					
 					contractUnit[nr].setText(p.info());
+					
+					// Change color depending on product type
+					contractUnit[nr].setBackground( Helper.giveColor(p.getMaterial()) );
 
 					// Check for matching in shelf only
-					// Kleine Hilfe weil ich ohne Farben 
-					// und Bilder gearbeitet habe.
 					errorField.setText(shelf.findMatch(p));
 					
 				} catch (Exception ex) {
