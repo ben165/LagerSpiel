@@ -24,12 +24,6 @@ AENDERUNGEN / ERGAENZUNGEN in "Orders.java"
 
 Code erfolgreich compiliert mit "openjdk 17.0.7 2023-04-18" unter Ubuntu mit Hilfe von Eclipse.
 
-## Ein kleiner Ausschnitt
-A screenshot of the most beautiful program ever written:
-
-
-![Screenshot](screenshot.png)
-
 ## The good
 
 - Es funktioniert
@@ -45,11 +39,16 @@ A screenshot of the most beautiful program ever written:
 - Error Handling ein- zweimal zweckentfremdet
 - Keine Bilder
 
-Programm war nach 4 Tagen fertig programmiert. Zeit waren so 60 Tage. Am letzten Tage wurden noch Verbesserungen implementiert (Farbe, Match-Suche, Schoeneres Bilanz Fenster...).
+Programm war nach 4 Tagen fertig programmiert. Zeit waren so 60 Tage. Am letzten Tag wurden noch Verbesserungen implementiert (Farbe, Match-Suche, Schoeneres Bilanz Fenster...).
 
-- Man koennte hier noch so viel machen but fck it! Draussen scheint die Sonne und ich will chillen 🌞!
+Man koennte hier noch so viel machen but fck it! Draussen scheint die Sonne und ich will chillen 🌞!
 
-Abgabe wird nach Einsendeschluss auf meinem GitHub veroeffentlicht.
+Abgabe wird nach Einsendeschluss auf meinem GitHub (ben165) veroeffentlicht.
+
+## Ein kleiner Ausschnitt
+A screenshot of the most beautiful program ever written:
+
+![Screenshot](screenshot.png)
 
 ## Unsere Aufgabenstellung Sommer 2023
 

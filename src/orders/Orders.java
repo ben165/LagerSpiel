@@ -3,10 +3,6 @@ package orders;
 public class Orders {
 	private final String[][] data = {
 			{"1","Einlagerung","Papier","Weiss","A4","200"},
-			{"41","Auslagerung","Papier","Weiss","A4","1000"},
-			{"42","Auslagerung","Stein","Marmor","Mittel","1200"},
-			{"43","Auslagerung","Holz","Buche","Bretter","1100"},
-			{"1","Einlagerung","Papier","Weiss","A4","200"},
 			{"2","Einlagerung","Papier","Blau","A5","300"},
 			{"3","Einlagerung","Holz","Kiefer","Bretter","200"},
 			{"4","Einlagerung","Holz","Buche","Balken","500"},
