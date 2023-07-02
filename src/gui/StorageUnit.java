@@ -107,6 +107,7 @@ public class StorageUnit implements ActionListener{
 						LagerGui.orderList.delete(contractNr);
 						LagerGui.balanceField.setText( LagerGui.balanceList.getBalance() );
 						unitArea.setBackground(Helper.giveColor(-1));
+						LagerGui.errorField.setText("Auslieferung abgeschlossen");
 					}
 				}
 				catch (Exception e1) {

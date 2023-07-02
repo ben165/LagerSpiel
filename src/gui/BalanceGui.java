@@ -14,9 +14,9 @@ public class BalanceGui implements ActionListener{
 	Font font = new Font(Font.MONOSPACED, Font.PLAIN, 14);
 
 	JTextArea balanceArea = new JTextArea();
-	JButton nextPage = new JButton("-->");
-	JButton lastPage = new JButton("<--");
-	JButton reload = new JButton("Reload");
+	JButton nextPage = new JButton(">");
+	JButton lastPage = new JButton("<");
+	JButton reload = new JButton("Refresh");
 	
 	public BalanceGui() {
 	
@@ -41,12 +41,12 @@ public class BalanceGui implements ActionListener{
 		
 		lastPage.addActionListener(this);
 		lastPage.setFocusable(false);
-		lastPage.setBounds(100, 500, 100, 25);
+		lastPage.setBounds(100, 500, 50, 25);
 		frame.add( lastPage );
 		
 		nextPage.addActionListener(this);
 		nextPage.setFocusable(false);
-		nextPage.setBounds(200, 500, 100, 25);
+		nextPage.setBounds(150, 500, 50, 25);
 		frame.add( nextPage );
 		
 		frame.setVisible(true);
@@ -57,11 +57,11 @@ public class BalanceGui implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		String s = e.getActionCommand();
 		
-		if (s == "-->") {
+		if (s == ">") {
 			LagerGui.balanceList.setPage( LagerGui.balanceList.getPage()+1 );
 			balanceArea.setText(null);
 			balanceArea.setText( LagerGui.balanceList.getList() );
-		} else if (s == "<--") {
+		} else if (s == "<") {
 			LagerGui.balanceList.setPage( LagerGui.balanceList.getPage()-1 );
 			balanceArea.setText(null);
 			balanceArea.setText( LagerGui.balanceList.getList() );

@@ -12,6 +12,10 @@ import javax.swing.JTextField;
 import orders.*;
 import product.*;
 
+// Das ist die MAIN Gui. Das wird als erstes aufgerufen. Die Dinge unter Paket "product" werden hier statisch initianlisiert.
+// Action Handling fuer Buttons ist hier und in den Klassen in dem Paket "gui".
+// Alles public static aus Faulheit :/ :D.
+
 public class LagerGui implements ActionListener {
 
 	// Margin
@@ -87,7 +91,7 @@ public class LagerGui implements ActionListener {
 		// info / error field
 		// label
 		errorLabel = new JLabel();
-		errorLabel.setText("Info:");
+		errorLabel.setText("Letzte Info:");
 		errorLabel.setBounds(LEFT + 720, TOP + 200*3, 100, 25);
 		frame.add(errorLabel);
 
@@ -125,8 +129,17 @@ public class LagerGui implements ActionListener {
 					// Change color depending on product type
 					contractUnit[nr].setBackground( Helper.giveColor(p.getMaterial()) );
 
-					// Check for matching in shelf only
-					errorField.setText(shelf.findMatch(p));
+					// Check for matching in shelf only. Matches only one.
+					// Empties field info if nothing there.
+					// Not checking contracts
+					
+					try {
+						String temp = new String(shelf.findMatch(p));
+						errorField.setText(temp);
+					} catch (Exception ex) {
+						//do nothing
+					};
+					
 					
 				} catch (Exception ex) {
 					orders.decrementOrder();

@@ -72,25 +72,27 @@ public class Storage{
 	}
 	
 	// War nicht gefragt in Aufgabenstellung
-	public String findMatch( Product p ) {
+	// Check contracts nicht
+	public String findMatch( Product p ) throws Exception {
 		Product pShelf;
 		
-		// Es handelt sich um eine Einlagerung
-		if (p.isIn() == true) {
-			return "";
+		// Einlagerung, wir suchen nur nach Auslagerungen
+		if (p.isIn() != false) {
+			throw new Exception("Einlagerung");
 		}
 		
 		for ( int i=0; i<4; i++ ) {
 			for (int j=0; j<4; j++) {
 				pShelf = shelf[i][j];
-				if (pShelf != null) {
+				if (pShelf != null	) {
 					if (pShelf.getKey().equals(p.getKey())) {
-						return "Neuer Vertrag passt auf Lagerplatz " + (i+1) + "" + (j+1);
+						return "Ein Auftrag passt auf Lagerplatz " + (i+1) + "" + (j+1);
 					}
 				}
 			}
 		}
-		return "";
+		// Nichts gefunden.
+		throw new Exception("Nichts gefunden");
 	}
 	
 }
