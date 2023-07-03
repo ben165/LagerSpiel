@@ -28,25 +28,25 @@ Code erfolgreich compiliert mit "openjdk 17.0.7 2023-04-18" unter Ubuntu mit Hil
 
 - Es funktioniert
 - Es ist bunt
+- Klassenanzahl ueberschaubar
 - Error Handling implementiert
 - Detailierte Vorgaenge im Bilanz Fenster aufgezeichnet
-- I would say: Bullet Proofed. Programm benutzt die einfachsten Elemente und kann hoffentlich in 10 Jahren noch kompiliert werden.
+- Benutzung weniger, simpler GUI Elemente
 
 ## The bad
 
 - Teile der GUI public static
-- Programm funktioniert auch ohne GUI. Diese Art von Separation erleichtert den Aufbau von Grund, aber die spaetere GUI Implementierung ist haesslich. Von der GUI wird querfeld auf Methoden aller Klassen zugegriffen
-- Error Handling ein- zweimal zweckentfremdet
+- Programm funktioniert auch ohne GUI. Diese Art von Separation erleichterte den Aufbau von Grund, aber die spaetere GUI Implementierung ist haesslich geworden. Die GUI Elemente rufen sich gegenseitig auf
 - Keine Bilder
+- Kommentierung auf Deutsch und Englisch.
 
-Programm war nach 4 Tagen fertig programmiert. Zeit waren so 60 Tage. Am letzten Tag wurden noch Verbesserungen implementiert (Farbe, Match-Suche, Schoeneres Bilanz Fenster...).
+Programm war nach 4 Tagen programmiert. Zeit waren so 60 Tage. Am letzten Tag wurden noch Verbesserungen implementiert (Farbe, Match-Suche, Schoeneres Bilanz Fenster...).
 
-Man koennte hier noch so viel machen but fck it! Draussen scheint die Sonne und ich will chillen 🌞!
+Verbesserungsbedarf war am Ende immer noch da but fck it! Draussen schien die Sonne und ich wollte chillen 🌞.
 
 Abgabe wird nach Einsendeschluss auf meinem GitHub (ben165) veroeffentlicht.
 
 ## Ein kleiner Ausschnitt
-A screenshot of the most beautiful program ever written:
 
 ![Screenshot](screenshot.png)
 

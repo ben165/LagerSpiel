@@ -1,4 +1,3 @@
-
 import gui.LagerGui;
 
 public class Start {
